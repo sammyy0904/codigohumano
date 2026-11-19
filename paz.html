@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi ruta de paz | Código Humano</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1>CÓDIGO HUMANO</h1>
+            <p>Programando Rutas de Paz para mi Bienestar Integral</p>
+        </header>
+        <nav aria-label="Menú principal">
+            <a href="index.html">Inicio</a>
+<a href="bienestar.html">Bienestar</a>
+<a href="escaneo.html">Escaneo</a>
+<a href="bug.html">Detectando el bug</a>
+<a href="areas.html">Áreas</a>
+<a href="rutas.html">Mi ruta</a>
+<a href="herramientas.html">Herramientas</a>
+<a href="paz.html" class="activo">Ruta de paz</a>
+<a href="recursos.html">Recursos</a>
+</nav>
+<main>
+    <h2>Mi ruta de paz</h2>
+    <p>Completa la frase para pensar cómo responder ante una situación difícil.</p>
+    <section class="tarjeta">
+        <label>Cuando ocurra...<input id="situacion" placeholder="Ejemplo: un compañero me haga enojar"></label>
+        <label>En lugar de...<input id="reaccion" placeholder="Ejemplo: responder con insultos"></label>
+        <label>Intentaré...<input id="alternativa" placeholder="Ejemplo: hablar tranquilamente"></label>
+        <label>Porque esto ayudará a...<input id="motivo" placeholder="Ejemplo: mejorar la convivencia">
+        </label>
+        <button onclick="crearRuta()">Crear mi ruta</button>
+        <p class="estado" id="miRuta" aria-live="polite">Tu compromiso aparecerá aquí.</p>
+    </section>
+    <section class="tarjeta">
+        <h3>Ejemplo 1</h3>
+        <p>Cuando un compañero me haga enojar, en lugar de responder con insultos, intentaré hablar tranquilamente y escuchar su opinión para evitar conflictos.</p>
+        <h3>Ejemplo 2</h3>
+        <p>Cuando tenga muchas tareas, en lugar de desesperarme, intentaré organizar mi tiempo y realizar mis actividades por orden de importancia.</p>
+    </section>
+</main>
+<footer>CECyTE 24 · Proyecto Código Humano · Cuidarme también es aprender a convivir.</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escaneo del sistema | Código Humano</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>CÓDIGO HUMANO</h1>
+        <p>Programando Rutas de Paz para mi Bienestar Integral</p>
+    </header>
+    <nav aria-label="Menú principal">
+        <a href="index.html">Inicio</a>
+<a href="bienestar.html">Bienestar</a>
+<a href="escaneo.html" class="activo">Escaneo</a>
+<a href="bug.html">Detectando el bug</a>
+<a href="areas.html">Áreas</a>
+<a href="rutas.html">Mi ruta</a>
+<a href="herramientas.html">Herramientas</a>
+<a href="paz.html">Ruta de paz</a>
+<a href="recursos.html">Recursos</a>
+</nav>
+<main>
+    <h2>Escaneo del sistema: ¿Cómo estoy hoy?</h2>
+    <p>Selecciona el estado que mejor representa cómo te sientes. No es un diagnóstico, sino una forma de reflexionar.</p>
+    <div class="grid">
+        <article class="tarjeta estado verde">
+            <h3> ESTABLE</h3>
+            <p>Me siento tranquilo y puedo realizar mis actividades.</p>
+            <button onclick="mostrarEstado('estable')">Seleccionar</button>
+        </article>
+        <article class="tarjeta estado amarillo">
+            <h3> ATENCIÓN</h3>
+            <p>Me siento preocupado, estresado, enojado o distraído.</p>
+            <button onclick="mostrarEstado('atencion')">Seleccionar</button>
+        </article>
+        <article class="tarjeta estado rojo">
+            <h3> NECESITO APOYO</h3>
+            <p>Una situación me está rebasando y necesito hablar con alguien.</p>
+            <button onclick="mostrarEstado('apoyo')">Seleccionar</button>
+        </article>
+    </div>
+    <section class="tarjeta">
+        <h3>Tu recomendación</h3>
+        <p id="resultadoEstado" aria-live="polite">Elige un estado para ver una recomendación.</p>
+    </section>
+</main>
+<footer>CECyTE 24 · Proyecto Código Humano · Cuidarme también es aprender a convivir.</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
